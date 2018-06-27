@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1>Connection Logs</h1>
+    <p>Please fill all mandatory fileds to get connection logs.</p>
+  </div>
+
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Consumer ID:</label>
+      <input type="text" class="form-control" placeholder="Consumer id" [(ngModel)]="model.consumerID" name='consumerID'>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Phone Number:</label>
+      <input type="text" class="form-control" placeholder="Mobile numbe" [(ngModel)]="model.mobileNo" name='mobileNo'>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Subsidery:</label>
+      <input type="text" class="form-control" placeholder="Subsidery code" [(ngModel)]="model.subsidiary" name='subsidiary'>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="getConnectionLogs()">Submit</button>
+  </form>
+</div>
